@@ -37,7 +37,7 @@
             overflow-x: hidden;
         }
 
-        /* CENA MAIS FORTE/VISÍVEL */
+        /* FUNDO BEM FORTE E NÍTIDO */
         .background-scene {
             position: fixed;
             top: 0;
@@ -45,65 +45,66 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(180deg, #1a1510 0%, #2a1f15 20%, #3e2723 50%, #2a1a10 80%, #1a1510 100%);
+            background: linear-gradient(180deg, #2a1f15 0%, #3e2723 20%, #5d4037 40%, #4e342e 60%, #3e2723 80%, #2a1f15 100%);
         }
 
-        /* ESTANTE DE LIVROS - MAIS VISÍVEL */
+        /* ESTANTE BEM NÍTIDA */
         .bookshelf {
             position: fixed;
-            left: 2%;
-            top: 8%;
-            width: 200px;
-            height: 75%;
-            background: linear-gradient(90deg, #4e342e 0%, #6d4c41 30%, #795548 50%, #6d4c41 70%, #4e342e 100%);
-            border: 10px solid #3e2723;
+            left: 1%;
+            top: 5%;
+            width: 220px;
+            height: 80%;
+            background: linear-gradient(90deg, #6d4c41 0%, #8d6e63 30%, #a1887f 50%, #8d6e63 70%, #6d4c41 100%);
+            border: 12px solid #4e342e;
             border-radius: 15px;
             z-index: -1;
-            box-shadow: 15px 5px 40px rgba(0,0,0,0.7), inset 0 0 20px rgba(0,0,0,0.3);
+            box-shadow: 20px 10px 50px rgba(0,0,0,0.8), inset 0 0 30px rgba(0,0,0,0.3);
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            padding: 15px;
+            padding: 20px;
         }
 
         .shelf {
             width: 100%;
-            height: 4px;
-            background: #3e2723;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.6);
+            height: 6px;
+            background: #4e342e;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.7);
         }
 
         .book {
             position: absolute;
-            width: 28px;
-            border-radius: 4px;
-            box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
-            border-left: 2px solid rgba(255,255,255,0.2);
+            width: 32px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+            border-left: 3px solid rgba(255,255,255,0.3);
+            border-right: 2px solid rgba(0,0,0,0.3);
         }
 
-        .book:nth-child(1) { left: 18px; top: 25px; height: 75px; background: linear-gradient(90deg, #a52a2a, #cd5c5c); }
-        .book:nth-child(2) { left: 48px; top: 18px; height: 90px; background: linear-gradient(90deg, #228b22, #32cd32); }
-        .book:nth-child(3) { left: 78px; top: 28px; height: 80px; background: linear-gradient(90deg, #4169e1, #6495ed); }
-        .book:nth-child(4) { left: 108px; top: 12px; height: 95px; background: linear-gradient(90deg, #d2691e, #ffa07a); }
-        .book:nth-child(5) { left: 138px; top: 32px; height: 75px; background: linear-gradient(90deg, #8a2be2, #da70d6); }
+        .book:nth-child(1) { left: 20px; top: 30px; height: 85px; background: linear-gradient(90deg, #cd5c5c, #f08080); }
+        .book:nth-child(2) { left: 55px; top: 20px; height: 100px; background: linear-gradient(90deg, #32cd32, #90ee90); }
+        .book:nth-child(3) { left: 90px; top: 35px; height: 90px; background: linear-gradient(90deg, #6495ed, #87ceeb); }
+        .book:nth-child(4) { left: 125px; top: 15px; height: 105px; background: linear-gradient(90deg, #ffa07a, #ffd700); }
+        .book:nth-child(5) { left: 160px; top: 40px; height: 85px; background: linear-gradient(90deg, #da70d6, #ee82ee); }
 
-        .book:nth-child(6) { left: 22px; top: 140px; height: 80px; background: linear-gradient(90deg, #708090, #b0c4de); }
-        .book:nth-child(7) { left: 52px; top: 135px; height: 85px; background: linear-gradient(90deg, #da70d6, #ee82ee); }
-        .book:nth-child(8) { left: 82px; top: 145px; height: 75px; background: linear-gradient(90deg, #9acd32, #adff2f); }
-        .book:nth-child(9) { left: 112px; top: 130px; height: 90px; background: linear-gradient(90deg, #9932cc, #ba55d3); }
+        .book:nth-child(6) { left: 25px; top: 160px; height: 90px; background: linear-gradient(90deg, #b0c4de, #e6e6fa); }
+        .book:nth-child(7) { left: 60px; top: 155px; height: 95px; background: linear-gradient(90deg, #ee82ee, #dda0dd); }
+        .book:nth-child(8) { left: 95px; top: 165px; height: 85px; background: linear-gradient(90deg, #adff2f, #7fff00); }
+        .book:nth-child(9) { left: 130px; top: 150px; height: 100px; background: linear-gradient(90deg, #ba55d3, #d8bfd8); }
 
-        .book:nth-child(10) { left: 26px; top: 250px; height: 85px; background: linear-gradient(90deg, #cd853f, #deb887); }
-        .book:nth-child(11) { left: 56px; top: 245px; height: 90px; background: linear-gradient(90deg, #6495ed, #87ceeb); }
-        .book:nth-child(12) { left: 86px; top: 255px; height: 80px; background: linear-gradient(90deg, #ff6347, #ffa07a); }
+        .book:nth-child(10) { left: 30px; top: 280px; height: 95px; background: linear-gradient(90deg, #deb887, #f5deb3); }
+        .book:nth-child(11) { left: 65px; top: 275px; height: 100px; background: linear-gradient(90deg, #87ceeb, #b0e0e6); }
+        .book:nth-child(12) { left: 100px; top: 285px; height: 90px; background: linear-gradient(90deg, #ffa07a, #ffb6c1); }
 
-        /* LAREIRA MAIS FORTE */
+        /* LAREIRA BEM NÍTIDA E FORTE */
         .fireplace-container {
             position: fixed;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 550px;
-            height: 450px;
+            width: 600px;
+            height: 500px;
             z-index: -1;
         }
 
@@ -111,53 +112,53 @@
             position: absolute;
             top: 0;
             width: 100%;
-            height: 50px;
-            background: linear-gradient(180deg, #5d4037 0%, #4e342e 50%, #3e2723 100%);
-            border-radius: 8px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.6);
-            border: 3px solid #2e1c15;
+            height: 60px;
+            background: linear-gradient(180deg, #8d6e63 0%, #6d4c41 50%, #5d4037 100%);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+            border: 4px solid #4e342e;
         }
 
         .fireplace-body {
             position: absolute;
-            top: 50px;
+            top: 60px;
             width: 100%;
-            height: 400px;
-            background: linear-gradient(90deg, #6d4c41 0%, #8d6e63 25%, #a1887f 50%, #8d6e63 75%, #6d4c41 100%);
-            border: 8px solid #4e342e;
-            border-radius: 0 0 25px 25px;
-            box-shadow: inset 0 0 30px rgba(0,0,0,0.4);
+            height: 440px;
+            background: linear-gradient(90deg, #8d6e63 0%, #a1887f 25%, #bcaaa4 50%, #a1887f 75%, #8d6e63 100%);
+            border: 10px solid #5d4037;
+            border-radius: 0 0 30px 30px;
+            box-shadow: inset 0 0 40px rgba(0,0,0,0.5);
         }
 
         .fireplace-opening {
             position: absolute;
-            bottom: 50px;
+            bottom: 60px;
             left: 50%;
             transform: translateX(-50%);
-            width: 400px;
-            height: 280px;
-            background: #0f0f0f;
-            border-radius: 15px 15px 0 0;
+            width: 450px;
+            height: 300px;
+            background: #1a1a1a;
+            border-radius: 20px 20px 0 0;
             overflow: hidden;
-            box-shadow: inset 0 0 80px rgba(0,0,0,0.95);
-            border: 10px solid #3e2723;
+            box-shadow: inset 0 0 100px rgba(0,0,0,0.95);
+            border: 12px solid #4e342e;
         }
 
-        /* FOGO MAIS BRILHANTE */
+        /* FOGO BEM BRILHANTE */
         .fire-glow {
             position: absolute;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 500px;
-            height: 350px;
-            background: radial-gradient(ellipse at center bottom, rgba(255,100,0,0.6) 0%, rgba(255,50,0,0.3) 40%, transparent 70%);
-            animation: glowPulse 1.5s ease-in-out infinite alternate;
+            width: 550px;
+            height: 400px;
+            background: radial-gradient(ellipse at center bottom, rgba(255,100,0,0.8) 0%, rgba(255,50,0,0.5) 30%, rgba(255,150,0,0.3) 50%, transparent 70%);
+            animation: glowPulse 1.2s ease-in-out infinite alternate;
         }
 
         @keyframes glowPulse {
-            0% { opacity: 0.8; transform: translateX(-50%) scale(1); }
-            100% { opacity: 1; transform: translateX(-50%) scale(1.15); }
+            0% { opacity: 0.9; transform: translateX(-50%) scale(1); }
+            100% { opacity: 1; transform: translateX(-50%) scale(1.2); }
         }
 
         .fire {
@@ -165,49 +166,49 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 320px;
-            height: 220px;
+            width: 380px;
+            height: 250px;
         }
 
         .flame {
             position: absolute;
             bottom: 0;
             border-radius: 50% 50% 20% 20%;
-            filter: blur(2px);
-            animation: flicker 0.5s ease-in-out infinite alternate;
+            filter: blur(1px);
+            animation: flicker 0.4s ease-in-out infinite alternate;
         }
 
         .flame:nth-child(1) {
-            left: 15%;
-            width: 90px;
-            height: 130px;
-            background: linear-gradient(0deg, #ff4500 0%, #ff6b35 30%, #ffa500 70%, #ffcc00 100%);
+            left: 10%;
+            width: 100px;
+            height: 150px;
+            background: linear-gradient(0deg, #ff4500 0%, #ff6b35 30%, #ffa500 70%, #ffff00 100%);
             animation-delay: 0.1s;
             opacity: 0.95;
         }
 
         .flame:nth-child(2) {
-            left: 32%;
-            width: 110px;
-            height: 170px;
+            left: 28%;
+            width: 130px;
+            height: 200px;
             background: linear-gradient(0deg, #ff6347 0%, #ff8c00 40%, #ffd700 80%, #ffff99 100%);
             animation-delay: 0s;
             z-index: 2;
         }
 
         .flame:nth-child(3) {
-            left: 52%;
-            width: 100px;
-            height: 150px;
+            left: 50%;
+            width: 120px;
+            height: 180px;
             background: linear-gradient(0deg, #ff4500 0%, #ff7f50 35%, #ffb347 75%, #ffe4b5 100%);
             animation-delay: 0.2s;
             opacity: 0.95;
         }
 
         .flame:nth-child(4) {
-            left: 70%;
-            width: 80px;
-            height: 110px;
+            left: 72%;
+            width: 90px;
+            height: 140px;
             background: linear-gradient(0deg, #dc143c 0%, #ff6347 50%, #ffa07a 100%);
             animation-delay: 0.15s;
             opacity: 0.9;
@@ -221,31 +222,31 @@
             100% { transform: translateX(-50%) scale(1.08) rotate(-1deg) skewX(-2deg); }
         }
 
-        /* BRASAS BRILHANDO */
+        /* BRASAS BRILHANDO FORTE */
         .embers {
             position: absolute;
-            bottom: 15px;
+            bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            width: 350px;
-            height: 50px;
-            background: radial-gradient(ellipse at center, #ff6347 0%, #ff4500 30%, #8b0000 60%, transparent 100%);
-            opacity: 0.9;
-            animation: emberGlow 2s ease-in-out infinite;
+            width: 400px;
+            height: 60px;
+            background: radial-gradient(ellipse at center, #ff6347 0%, #ff4500 40%, #8b0000 70%, transparent 100%);
+            opacity: 0.95;
+            animation: emberGlow 1.5s ease-in-out infinite;
         }
 
         @keyframes emberGlow {
-            0%, 100% { opacity: 0.7; }
+            0%, 100% { opacity: 0.8; }
             50% { opacity: 1; }
         }
 
-        /* MESA DE MADEIRA MAIS VISÍVEL */
+        /* MESA BEM NÍTIDA */
         .wooden-table {
             position: fixed;
-            right: 2%;
-            bottom: 5%;
-            width: 280px;
-            height: 180px;
+            right: 1%;
+            bottom: 3%;
+            width: 320px;
+            height: 200px;
             z-index: -1;
         }
 
@@ -253,175 +254,176 @@
             position: absolute;
             top: 0;
             width: 100%;
-            height: 25px;
-            background: linear-gradient(180deg, #8d6e63 0%, #6d4c41 50%, #5d4037 100%);
-            border-radius: 8px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.5), inset 0 3px 8px rgba(139,69,19,0.4);
-            border: 2px solid #4e342e;
+            height: 30px;
+            background: linear-gradient(180deg, #a1887f 0%, #8d6e63 50%, #6d4c41 100%);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6), inset 0 5px 10px rgba(139,69,19,0.4);
+            border: 3px solid #5d4037;
         }
 
         .table-leg {
             position: absolute;
             bottom: 0;
-            width: 30px;
-            height: 155px;
-            background: linear-gradient(90deg, #5d4037 0%, #6d4c41 50%, #5d4037 100%);
-            border-radius: 0 0 8px 8px;
-            border: 2px solid #4e342e;
+            width: 35px;
+            height: 170px;
+            background: linear-gradient(90deg, #6d4c41 0%, #8d6e63 50%, #6d4c41 100%);
+            border-radius: 0 0 10px 10px;
+            border: 3px solid #5d4037;
         }
 
-        .table-leg:nth-child(2) { left: 25px; }
-        .table-leg:nth-child(3) { right: 25px; }
+        .table-leg:nth-child(2) { left: 30px; }
+        .table-leg:nth-child(3) { right: 30px; }
 
-        /* CAFÉ COM VAPOR MAIS VISÍVEL */
+        /* CAFÉ BEM VISÍVEL */
         .coffee-set {
             position: absolute;
-            top: -35px;
+            top: -40px;
             left: 50%;
             transform: translateX(-50%);
         }
 
         .saucer {
             position: absolute;
-            width: 90px;
-            height: 90px;
-            background: radial-gradient(circle at 30% 30%, #ffffff, #d0d0d0);
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle at 30% 30%, #ffffff, #e0e0e0);
             border-radius: 50%;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
             top: 0;
-            border: 2px solid #c0c0c0;
+            border: 3px solid #d0d0d0;
         }
 
         .coffee-cup {
             position: absolute;
-            top: 18px;
-            left: 18px;
-            width: 55px;
-            height: 50px;
+            top: 20px;
+            left: 20px;
+            width: 60px;
+            height: 55px;
             background: linear-gradient(90deg, #ffffff 0%, #f5f5f5 50%, #e8e8e8 100%);
-            border-radius: 0 0 28px 28px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+            border-radius: 0 0 30px 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
         }
 
         .coffee-cup::before {
             content: '';
             position: absolute;
-            right: -14px;
-            top: 10px;
-            width: 20px;
-            height: 24px;
+            right: -16px;
+            top: 12px;
+            width: 22px;
+            height: 28px;
             border: 5px solid #f5f5f5;
-            border-radius: 0 18px 18px 0;
+            border-radius: 0 20px 20px 0;
         }
 
         .coffee-liquid {
             position: absolute;
-            top: 6px;
-            left: 6px;
-            width: 43px;
-            height: 16px;
+            top: 8px;
+            left: 8px;
+            width: 44px;
+            height: 18px;
             background: radial-gradient(ellipse at center, #6f4e37 0%, #3e2723 100%);
             border-radius: 50%;
         }
 
-        /* VAPOR MAIS VISÍVEL */
+        /* VAPOR BEM DENSONÍVEL */
         .steam-container {
             position: absolute;
-            top: -50px;
+            top: -60px;
             left: 50%;
             transform: translateX(-50%);
-            width: 70px;
-            height: 60px;
+            width: 80px;
+            height: 70px;
         }
 
         .steam {
             position: absolute;
-            width: 25px;
-            height: 50px;
-            background: linear-gradient(0deg, rgba(255,255,255,0.6) 0%, transparent 100%);
+            width: 30px;
+            height: 60px;
+            background: linear-gradient(0deg, rgba(255,255,255,0.8) 0%, transparent 100%);
             border-radius: 50%;
-            filter: blur(6px);
-            animation: steamRise 3s ease-out infinite;
+            filter: blur(5px);
+            animation: steamRise 2.5s ease-out infinite;
         }
 
         .steam:nth-child(1) { left: 10px; animation-delay: 0s; }
-        .steam:nth-child(2) { left: 28px; animation-delay: 1s; }
-        .steam:nth-child(3) { left: 46px; animation-delay: 2s; }
+        .steam:nth-child(2) { left: 32px; animation-delay: 0.8s; }
+        .steam:nth-child(3) { left: 54px; animation-delay: 1.6s; }
 
         @keyframes steamRise {
-            0% { transform: translateY(0) scaleX(1); opacity: 0.8; }
-            50% { transform: translateY(-30px) scaleX(1.8); opacity: 0.4; }
-            100% { transform: translateY(-60px) scaleX(2.5); opacity: 0; }
+            0% { transform: translateY(0) scaleX(1); opacity: 0.9; }
+            50% { transform: translateY(-35px) scaleX(2); opacity: 0.5; }
+            100% { transform: translateY(-70px) scaleX(3); opacity: 0; }
         }
 
         /* MARSHMALLOWS */
         .marshmallows {
             position: absolute;
-            top: -12px;
-            right: -35px;
+            top: -15px;
+            right: -40px;
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 5px;
         }
 
         .marshmallow {
-            width: 20px;
-            height: 16px;
+            width: 22px;
+            height: 18px;
             background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
-            border-radius: 6px;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+            border-radius: 7px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
         }
 
-        /* PORTA MAIS VISÍVEL */
+        /* PORTA BEM NÍTIDA */
         .door {
             position: fixed;
-            right: 32%;
-            top: 12%;
-            width: 140px;
-            height: 240px;
-            background: linear-gradient(90deg, #5d4037 0%, #8d6e63 30%, #6d4c41 50%, #8d6e63 70%, #5d4037 100%);
-            border: 8px solid #3e2723;
-            border-radius: 70px 70px 0 0;
+            right: 30%;
+            top: 10%;
+            width: 160px;
+            height: 280px;
+            background: linear-gradient(90deg, #6d4c41 0%, #8d6e63 30%, #a1887f 50%, #8d6e63 70%, #6d4c41 100%);
+            border: 10px solid #4e342e;
+            border-radius: 80px 80px 0 0;
             z-index: -2;
-            box-shadow: 0 0 50px rgba(0,0,0,0.7);
-            opacity: 0.85;
+            box-shadow: 0 0 60px rgba(0,0,0,0.8);
+            opacity: 0.9;
         }
 
         .door-knob {
             position: absolute;
-            left: 15px;
+            left: 18px;
             top: 50%;
-            width: 14px;
-            height: 14px;
+            width: 16px;
+            height: 16px;
             background: radial-gradient(circle at 30% 30%, #ffd700, #b8860b);
             border-radius: 50%;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.6);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.7);
         }
 
-        /* TAPETE MAIS VISÍVEL */
+        /* TAPETE BEM VISÍVEL */
         .rug {
             position: fixed;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 700px;
-            height: 120px;
-            background: radial-gradient(ellipse at center, #a52a2a 0%, #8b0000 40%, #5d0000 70%, transparent 100%);
-            opacity: 0.8;
+            width: 800px;
+            height: 150px;
+            background: radial-gradient(ellipse at center, #b22222 0%, #8b0000 40%, #5d0000 70%, transparent 100%);
+            opacity: 0.85;
             z-index: -1;
         }
 
-        /* CONTEÚDO PRINCIPAL */
+        /* CONTEÚDO */
         .content-wrapper {
             position: relative;
             z-index: 1;
-            background: rgba(15, 15, 15, 0.82);
-            backdrop-filter: blur(8px);
+            background: rgba(20, 20, 20, 0.75);
+            backdrop-filter: blur(5px);
             min-height: 100vh;
             padding: 20px;
         }
 
-        /* RESTO DO CSS PERMANECE IGUAL... */
+        /* ... (CSS dos popups e elementos anteriores permanece igual) ... */
+        
         .achievement-popup {
             display: none;
             position: fixed;
@@ -531,8 +533,6 @@
             100% { transform: translate(var(--tx), var(--ty)) scale(1.5) rotate(360deg); opacity: 0; }
         }
 
-        /* ... (restante do CSS igual ao anterior) ... */
-        
         .header {
             padding: 60px 20px;
             text-align: center;
@@ -982,6 +982,97 @@
             cursor: pointer;
         }
 
+        /* DEPOIMENTOS - NOVO */
+        .testimonials-section {
+            margin-top: 80px;
+            padding: 60px 40px;
+            background: linear-gradient(145deg, rgba(26, 26, 26, 0.95) 0%, rgba(12, 12, 12, 0.95) 100%);
+            border-radius: 20px;
+            border: 2px solid var(--gold);
+        }
+
+        .testimonials-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            color: var(--gold);
+            margin-bottom: 40px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 15px;
+            padding: 25px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        }
+
+        .testimonial-stars {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            color: var(--text);
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold), #ffd700);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .testimonial-info h4 {
+            color: var(--gold);
+            margin-bottom: 5px;
+        }
+
+        .testimonial-info p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .testimonial-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: var(--green);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
         .footer {
             background: rgba(26, 26, 26, 0.95);
             padding: 40px 20px;
@@ -1013,7 +1104,7 @@
 </head>
 <body>
 
-    <!-- CENA MAIS FORTE/VISÍVEL -->
+    <!-- CENA BEM FORTE E NÍTIDA -->
     <div class="background-scene">
         <!-- ESTANTE -->
         <div class="bookshelf">
@@ -1021,9 +1112,9 @@
             <div class="book"></div><div class="book"></div><div class="book"></div>
             <div class="book"></div><div class="book"></div><div class="book"></div>
             <div class="book"></div><div class="book"></div><div class="book"></div>
-            <div class="shelf" style="top: 115px;"></div>
-            <div class="shelf" style="top: 235px;"></div>
-            <div class="shelf" style="top: 355px;"></div>
+            <div class="shelf" style="top: 120px;"></div>
+            <div class="shelf" style="top: 245px;"></div>
+            <div class="shelf" style="top: 370px;"></div>
         </div>
 
         <!-- PORTA -->
@@ -1047,7 +1138,7 @@
         <!-- TAPETE -->
         <div class="rug"></div>
 
-        <!-- MESA COM CAFÉ -->
+        <!-- MESA -->
         <div class="wooden-table">
             <div class="table-top"></div>
             <div class="table-leg"></div><div class="table-leg"></div>
@@ -1213,6 +1304,93 @@
 
                     <h2 class="section-title">Obras Disponíveis</h2>
                     <div class="ebooks-grid" id="ebooks-grid"></div>
+
+                    <!-- DEPOIMENTOS - NOVO -->
+                    <div class="testimonials-section">
+                        <h2 class="testimonials-title">💬 O que nossos leitores dizem</h2>
+                        
+                        <div class="testimonials-grid">
+                            
+                            <div class="testimonial-card">
+                                <div class="testimonial-badge">Verificado</div>
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Nunca imaginei que mudaria minha relação com dinheiro. O ebook 'Como Ficar Milionário' me abriu os olhos. Em 6 meses, já economizei R$ 15.000!"</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">👨</div>
+                                    <div class="testimonial-info">
+                                        <h4>Carlos Silva</h4>
+                                        <p>São Paulo, SP</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="testimonial-badge">Verificado</div>
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"A biblioteca do Edward é um tesouro. O ambiente aconchegante do site reflete o cuidado com o conteúdo. Meus investimentos já renderam 40% em 1 ano."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">👩</div>
+                                    <div class="testimonial-info">
+                                        <h4>Mariana Costa</h4>
+                                        <p>Rio de Janeiro, RJ</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="testimonial-badge">Verificado</div>
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Saí de R$ 50 mil em dívidas para R$ 20 mil investidos. O método funciona se você aplicar. Melhor investimento que já fiz!"</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">👨</div>
+                                    <div class="testimonial-info">
+                                        <h4>Roberto Almeida</h4>
+                                        <p>Belo Horizonte, MG</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="testimonial-badge">Verificado</div>
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"O ebook de Bitcoin me ajudou a entender criptomoedas de verdade. Hoje tenho uma carteira diversificada e durmo tranquilo."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">👩</div>
+                                    <div class="testimonial-info">
+                                        <h4>Fernanda Lima</h4>
+                                        <p>Curitiba, PR</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="testimonial-badge">Verificado</div>
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Finalmente entendi como o dinheiro funciona. Antes vivia no escuro, agora tenho clareza total das minhas finanças. Obrigado, Edward!"</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">👨</div>
+                                    <div class="testimonial-info">
+                                        <h4>João Pedro</h4>
+                                        <p>Fortaleza, CE</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="testimonial-badge">Verificado</div>
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Comprei a coleção completa e não me arrependo. Cada ebook vale o preço total. Já indiquei para todos os meus amigos."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">👩</div>
+                                    <div class="testimonial-info">
+                                        <h4>Ana Beatriz</h4>
+                                        <p>Salvador, BA</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
 
@@ -1392,7 +1570,6 @@
             document.getElementById('ach-product-name').textContent = titulo;
             document.getElementById('ach-product-price').textContent = preco;
             
-            // Criar sparkles
             const container = document.getElementById('sparkles-container');
             container.innerHTML = '';
             for (let i = 0; i < 40; i++) {
