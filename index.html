@@ -37,7 +37,7 @@
             overflow-x: hidden;
         }
 
-        /* CENA COMPLETA - BIBLIOTECA ACONCHEGANTE */
+        /* CENA MAIS FORTE/VISÍVEL */
         .background-scene {
             position: fixed;
             top: 0;
@@ -45,65 +45,65 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(180deg, #0f0f0f 0%, #1a0f0a 30%, #2a1a10 60%, #0c0c0c 100%);
+            background: linear-gradient(180deg, #1a1510 0%, #2a1f15 20%, #3e2723 50%, #2a1a10 80%, #1a1510 100%);
         }
 
-        /* ESTANTE DE LIVROS - LADO ESQUERDO */
+        /* ESTANTE DE LIVROS - MAIS VISÍVEL */
         .bookshelf {
             position: fixed;
             left: 2%;
-            top: 10%;
-            width: 180px;
-            height: 70%;
-            background: linear-gradient(90deg, #3e2723 0%, #5d4037 50%, #3e2723 100%);
-            border: 8px solid #2e1c15;
-            border-radius: 10px;
+            top: 8%;
+            width: 200px;
+            height: 75%;
+            background: linear-gradient(90deg, #4e342e 0%, #6d4c41 30%, #795548 50%, #6d4c41 70%, #4e342e 100%);
+            border: 10px solid #3e2723;
+            border-radius: 15px;
             z-index: -1;
-            box-shadow: 10px 0 30px rgba(0,0,0,0.6);
+            box-shadow: 15px 5px 40px rgba(0,0,0,0.7), inset 0 0 20px rgba(0,0,0,0.3);
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            padding: 10px;
+            padding: 15px;
         }
 
         .shelf {
             width: 100%;
-            height: 3px;
-            background: #2e1c15;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            height: 4px;
+            background: #3e2723;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.6);
         }
 
         .book {
             position: absolute;
-            width: 25px;
-            height: 80px;
-            border-radius: 3px;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+            width: 28px;
+            border-radius: 4px;
+            box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+            border-left: 2px solid rgba(255,255,255,0.2);
         }
 
-        .book:nth-child(1) { left: 15px; top: 20px; height: 70px; background: linear-gradient(90deg, #8b0000, #a52a2a); }
-        .book:nth-child(2) { left: 42px; top: 15px; height: 85px; background: linear-gradient(90deg, #006400, #228b22); }
-        .book:nth-child(3) { left: 70px; top: 25px; height: 75px; background: linear-gradient(90deg, #00008b, #4169e1); }
-        .book:nth-child(4) { left: 98px; top: 10px; height: 90px; background: linear-gradient(90deg, #8b4513, #d2691e); }
-        .book:nth-child(5) { left: 126px; top: 30px; height: 70px; background: linear-gradient(90deg, #4b0082, #8a2be2); }
+        .book:nth-child(1) { left: 18px; top: 25px; height: 75px; background: linear-gradient(90deg, #a52a2a, #cd5c5c); }
+        .book:nth-child(2) { left: 48px; top: 18px; height: 90px; background: linear-gradient(90deg, #228b22, #32cd32); }
+        .book:nth-child(3) { left: 78px; top: 28px; height: 80px; background: linear-gradient(90deg, #4169e1, #6495ed); }
+        .book:nth-child(4) { left: 108px; top: 12px; height: 95px; background: linear-gradient(90deg, #d2691e, #ffa07a); }
+        .book:nth-child(5) { left: 138px; top: 32px; height: 75px; background: linear-gradient(90deg, #8a2be2, #da70d6); }
 
-        .book:nth-child(6) { left: 20px; top: 130px; height: 75px; background: linear-gradient(90deg, #2f4f4f, #708090); }
-        .book:nth-child(7) { left: 48px; top: 125px; height: 80px; background: linear-gradient(90deg, #800080, #da70d6); }
-        .book:nth-child(8) { left: 76px; top: 135px; height: 70px; background: linear-gradient(90deg, #556b2f, #9acd32); }
-        .book:nth-child(9) { left: 104px; top: 120px; height: 85px; background: linear-gradient(90deg, #8b008b, #9932cc); }
+        .book:nth-child(6) { left: 22px; top: 140px; height: 80px; background: linear-gradient(90deg, #708090, #b0c4de); }
+        .book:nth-child(7) { left: 52px; top: 135px; height: 85px; background: linear-gradient(90deg, #da70d6, #ee82ee); }
+        .book:nth-child(8) { left: 82px; top: 145px; height: 75px; background: linear-gradient(90deg, #9acd32, #adff2f); }
+        .book:nth-child(9) { left: 112px; top: 130px; height: 90px; background: linear-gradient(90deg, #9932cc, #ba55d3); }
 
-        .book:nth-child(10) { left: 25px; top: 230px; height: 80px; background: linear-gradient(90deg, #a0522d, #cd853f); }
-        .book:nth-child(11) { left: 53px; top: 225px; height: 85px; background: linear-gradient(90deg, #191970, #6495ed); }
-        .book:nth-child(12) { left: 81px; top: 235px; height: 75px; background: linear-gradient(90deg, #dc143c, #ff6347); }
+        .book:nth-child(10) { left: 26px; top: 250px; height: 85px; background: linear-gradient(90deg, #cd853f, #deb887); }
+        .book:nth-child(11) { left: 56px; top: 245px; height: 90px; background: linear-gradient(90deg, #6495ed, #87ceeb); }
+        .book:nth-child(12) { left: 86px; top: 255px; height: 80px; background: linear-gradient(90deg, #ff6347, #ffa07a); }
 
-        /* LAREIRA GRANDE - CENTRO */
+        /* LAREIRA MAIS FORTE */
         .fireplace-container {
             position: fixed;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 500px;
-            height: 400px;
+            width: 550px;
+            height: 450px;
             z-index: -1;
         }
 
@@ -111,51 +111,53 @@
             position: absolute;
             top: 0;
             width: 100%;
-            height: 40px;
-            background: linear-gradient(180deg, #4a3728 0%, #3d2b1f 100%);
-            border-radius: 5px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            height: 50px;
+            background: linear-gradient(180deg, #5d4037 0%, #4e342e 50%, #3e2723 100%);
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+            border: 3px solid #2e1c15;
         }
 
         .fireplace-body {
             position: absolute;
-            top: 40px;
+            top: 50px;
             width: 100%;
-            height: 360px;
-            background: linear-gradient(90deg, #5d4037 0%, #795548 30%, #8d6e63 50%, #795548 70%, #5d4037 100%);
-            border: 5px solid #3e2723;
-            border-radius: 0 0 20px 20px;
+            height: 400px;
+            background: linear-gradient(90deg, #6d4c41 0%, #8d6e63 25%, #a1887f 50%, #8d6e63 75%, #6d4c41 100%);
+            border: 8px solid #4e342e;
+            border-radius: 0 0 25px 25px;
+            box-shadow: inset 0 0 30px rgba(0,0,0,0.4);
         }
 
         .fireplace-opening {
             position: absolute;
-            bottom: 40px;
+            bottom: 50px;
             left: 50%;
             transform: translateX(-50%);
-            width: 350px;
-            height: 250px;
-            background: #1a1a1a;
-            border-radius: 10px 10px 0 0;
+            width: 400px;
+            height: 280px;
+            background: #0f0f0f;
+            border-radius: 15px 15px 0 0;
             overflow: hidden;
-            box-shadow: inset 0 0 60px rgba(0,0,0,0.9);
-            border: 8px solid #3e2723;
+            box-shadow: inset 0 0 80px rgba(0,0,0,0.95);
+            border: 10px solid #3e2723;
         }
 
-        /* FOGO REALISTA */
+        /* FOGO MAIS BRILHANTE */
         .fire-glow {
             position: absolute;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 400px;
-            height: 300px;
-            background: radial-gradient(ellipse at center bottom, rgba(255,100,0,0.4) 0%, rgba(255,50,0,0.2) 40%, transparent 70%);
-            animation: glowPulse 2s ease-in-out infinite alternate;
+            width: 500px;
+            height: 350px;
+            background: radial-gradient(ellipse at center bottom, rgba(255,100,0,0.6) 0%, rgba(255,50,0,0.3) 40%, transparent 70%);
+            animation: glowPulse 1.5s ease-in-out infinite alternate;
         }
 
         @keyframes glowPulse {
-            0% { opacity: 0.6; transform: translateX(-50%) scale(1); }
-            100% { opacity: 1; transform: translateX(-50%) scale(1.1); }
+            0% { opacity: 0.8; transform: translateX(-50%) scale(1); }
+            100% { opacity: 1; transform: translateX(-50%) scale(1.15); }
         }
 
         .fire {
@@ -163,52 +165,52 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 280px;
-            height: 200px;
+            width: 320px;
+            height: 220px;
         }
 
         .flame {
             position: absolute;
             bottom: 0;
             border-radius: 50% 50% 20% 20%;
-            filter: blur(3px);
-            animation: flicker 0.6s ease-in-out infinite alternate;
+            filter: blur(2px);
+            animation: flicker 0.5s ease-in-out infinite alternate;
         }
 
         .flame:nth-child(1) {
-            left: 20%;
-            width: 80px;
-            height: 120px;
+            left: 15%;
+            width: 90px;
+            height: 130px;
             background: linear-gradient(0deg, #ff4500 0%, #ff6b35 30%, #ffa500 70%, #ffcc00 100%);
             animation-delay: 0.1s;
-            opacity: 0.9;
+            opacity: 0.95;
         }
 
         .flame:nth-child(2) {
-            left: 35%;
-            width: 100px;
-            height: 160px;
+            left: 32%;
+            width: 110px;
+            height: 170px;
             background: linear-gradient(0deg, #ff6347 0%, #ff8c00 40%, #ffd700 80%, #ffff99 100%);
             animation-delay: 0s;
             z-index: 2;
         }
 
         .flame:nth-child(3) {
-            left: 55%;
-            width: 90px;
-            height: 140px;
+            left: 52%;
+            width: 100px;
+            height: 150px;
             background: linear-gradient(0deg, #ff4500 0%, #ff7f50 35%, #ffb347 75%, #ffe4b5 100%);
             animation-delay: 0.2s;
-            opacity: 0.9;
+            opacity: 0.95;
         }
 
         .flame:nth-child(4) {
             left: 70%;
-            width: 70px;
-            height: 100px;
+            width: 80px;
+            height: 110px;
             background: linear-gradient(0deg, #dc143c 0%, #ff6347 50%, #ffa07a 100%);
             animation-delay: 0.15s;
-            opacity: 0.8;
+            opacity: 0.9;
         }
 
         @keyframes flicker {
@@ -219,31 +221,31 @@
             100% { transform: translateX(-50%) scale(1.08) rotate(-1deg) skewX(-2deg); }
         }
 
-        /* BRASAS */
+        /* BRASAS BRILHANDO */
         .embers {
             position: absolute;
-            bottom: 10px;
+            bottom: 15px;
             left: 50%;
             transform: translateX(-50%);
-            width: 300px;
-            height: 40px;
-            background: radial-gradient(ellipse at center, #ff4500 0%, #8b0000 50%, transparent 100%);
-            opacity: 0.8;
-            animation: emberGlow 3s ease-in-out infinite;
+            width: 350px;
+            height: 50px;
+            background: radial-gradient(ellipse at center, #ff6347 0%, #ff4500 30%, #8b0000 60%, transparent 100%);
+            opacity: 0.9;
+            animation: emberGlow 2s ease-in-out infinite;
         }
 
         @keyframes emberGlow {
-            0%, 100% { opacity: 0.6; }
-            50% { opacity: 0.9; }
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
         }
 
-        /* MESA DE MADEIRA RÚSTICA - DIREITA */
+        /* MESA DE MADEIRA MAIS VISÍVEL */
         .wooden-table {
             position: fixed;
-            right: 3%;
-            bottom: 8%;
-            width: 250px;
-            height: 150px;
+            right: 2%;
+            bottom: 5%;
+            width: 280px;
+            height: 180px;
             z-index: -1;
         }
 
@@ -251,158 +253,161 @@
             position: absolute;
             top: 0;
             width: 100%;
-            height: 20px;
-            background: linear-gradient(180deg, #6d4c41 0%, #5d4037 50%, #4e342e 100%);
-            border-radius: 5px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.4), inset 0 2px 5px rgba(139,69,19,0.3);
+            height: 25px;
+            background: linear-gradient(180deg, #8d6e63 0%, #6d4c41 50%, #5d4037 100%);
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5), inset 0 3px 8px rgba(139,69,19,0.4);
+            border: 2px solid #4e342e;
         }
 
         .table-leg {
             position: absolute;
             bottom: 0;
-            width: 25px;
-            height: 130px;
-            background: linear-gradient(90deg, #4e342e 0%, #5d4037 50%, #4e342e 100%);
-            border-radius: 0 0 5px 5px;
+            width: 30px;
+            height: 155px;
+            background: linear-gradient(90deg, #5d4037 0%, #6d4c41 50%, #5d4037 100%);
+            border-radius: 0 0 8px 8px;
+            border: 2px solid #4e342e;
         }
 
-        .table-leg:nth-child(2) { left: 20px; }
-        .table-leg:nth-child(3) { right: 20px; }
+        .table-leg:nth-child(2) { left: 25px; }
+        .table-leg:nth-child(3) { right: 25px; }
 
-        /* XÍCARA DE CAFÉ NA MESA */
+        /* CAFÉ COM VAPOR MAIS VISÍVEL */
         .coffee-set {
             position: absolute;
-            top: -30px;
+            top: -35px;
             left: 50%;
             transform: translateX(-50%);
         }
 
         .saucer {
             position: absolute;
-            width: 80px;
-            height: 80px;
-            background: radial-gradient(circle at 30% 30%, #f5f5f5, #e0e0e0);
+            width: 90px;
+            height: 90px;
+            background: radial-gradient(circle at 30% 30%, #ffffff, #d0d0d0);
             border-radius: 50%;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
             top: 0;
+            border: 2px solid #c0c0c0;
         }
 
         .coffee-cup {
             position: absolute;
-            top: 15px;
-            left: 15px;
-            width: 50px;
-            height: 45px;
-            background: linear-gradient(90deg, #ffffff 0%, #f0f0f0 50%, #e8e8e8 100%);
-            border-radius: 0 0 25px 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            top: 18px;
+            left: 18px;
+            width: 55px;
+            height: 50px;
+            background: linear-gradient(90deg, #ffffff 0%, #f5f5f5 50%, #e8e8e8 100%);
+            border-radius: 0 0 28px 28px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
         }
 
         .coffee-cup::before {
             content: '';
             position: absolute;
-            right: -12px;
-            top: 8px;
-            width: 18px;
-            height: 22px;
-            border: 4px solid #f0f0f0;
-            border-radius: 0 15px 15px 0;
+            right: -14px;
+            top: 10px;
+            width: 20px;
+            height: 24px;
+            border: 5px solid #f5f5f5;
+            border-radius: 0 18px 18px 0;
         }
 
         .coffee-liquid {
             position: absolute;
-            top: 5px;
-            left: 5px;
-            width: 40px;
-            height: 15px;
+            top: 6px;
+            left: 6px;
+            width: 43px;
+            height: 16px;
             background: radial-gradient(ellipse at center, #6f4e37 0%, #3e2723 100%);
             border-radius: 50%;
         }
 
-        /* VAPOR DO CAFÉ */
+        /* VAPOR MAIS VISÍVEL */
         .steam-container {
             position: absolute;
-            top: -40px;
+            top: -50px;
             left: 50%;
             transform: translateX(-50%);
-            width: 60px;
-            height: 50px;
+            width: 70px;
+            height: 60px;
         }
 
         .steam {
             position: absolute;
-            width: 20px;
-            height: 40px;
-            background: linear-gradient(0deg, rgba(255,255,255,0.4) 0%, transparent 100%);
+            width: 25px;
+            height: 50px;
+            background: linear-gradient(0deg, rgba(255,255,255,0.6) 0%, transparent 100%);
             border-radius: 50%;
-            filter: blur(8px);
-            animation: steamRise 4s ease-out infinite;
+            filter: blur(6px);
+            animation: steamRise 3s ease-out infinite;
         }
 
         .steam:nth-child(1) { left: 10px; animation-delay: 0s; }
-        .steam:nth-child(2) { left: 25px; animation-delay: 1.3s; }
-        .steam:nth-child(3) { left: 40px; animation-delay: 2.6s; }
+        .steam:nth-child(2) { left: 28px; animation-delay: 1s; }
+        .steam:nth-child(3) { left: 46px; animation-delay: 2s; }
 
         @keyframes steamRise {
-            0% { transform: translateY(0) scaleX(1); opacity: 0.6; }
-            50% { transform: translateY(-25px) scaleX(1.5); opacity: 0.3; }
-            100% { transform: translateY(-50px) scaleX(2); opacity: 0; }
+            0% { transform: translateY(0) scaleX(1); opacity: 0.8; }
+            50% { transform: translateY(-30px) scaleX(1.8); opacity: 0.4; }
+            100% { transform: translateY(-60px) scaleX(2.5); opacity: 0; }
         }
 
-        /* MARSHMALLOWS NO PRATO */
+        /* MARSHMALLOWS */
         .marshmallows {
             position: absolute;
-            top: -10px;
-            right: -30px;
+            top: -12px;
+            right: -35px;
             display: flex;
             flex-direction: column;
-            gap: 3px;
+            gap: 4px;
         }
 
         .marshmallow {
-            width: 18px;
-            height: 14px;
-            background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            width: 20px;
+            height: 16px;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+            border-radius: 6px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.3);
         }
 
-        /* PORTA DE MADEIRA - FUNDO */
+        /* PORTA MAIS VISÍVEL */
         .door {
             position: fixed;
-            right: 35%;
-            top: 15%;
-            width: 120px;
-            height: 200px;
-            background: linear-gradient(90deg, #4e342e 0%, #6d4c41 30%, #5d4037 50%, #6d4c41 70%, #4e342e 100%);
-            border: 6px solid #3e2723;
-            border-radius: 60px 60px 0 0;
+            right: 32%;
+            top: 12%;
+            width: 140px;
+            height: 240px;
+            background: linear-gradient(90deg, #5d4037 0%, #8d6e63 30%, #6d4c41 50%, #8d6e63 70%, #5d4037 100%);
+            border: 8px solid #3e2723;
+            border-radius: 70px 70px 0 0;
             z-index: -2;
-            box-shadow: 0 0 40px rgba(0,0,0,0.6);
-            opacity: 0.7;
+            box-shadow: 0 0 50px rgba(0,0,0,0.7);
+            opacity: 0.85;
         }
 
         .door-knob {
             position: absolute;
-            left: 12px;
+            left: 15px;
             top: 50%;
-            width: 12px;
-            height: 12px;
+            width: 14px;
+            height: 14px;
             background: radial-gradient(circle at 30% 30%, #ffd700, #b8860b);
             border-radius: 50%;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.6);
         }
 
-        /* TAPETE */
+        /* TAPETE MAIS VISÍVEL */
         .rug {
             position: fixed;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 600px;
-            height: 100px;
-            background: radial-gradient(ellipse at center, #8b0000 0%, #5d0000 50%, transparent 100%);
-            opacity: 0.6;
+            width: 700px;
+            height: 120px;
+            background: radial-gradient(ellipse at center, #a52a2a 0%, #8b0000 40%, #5d0000 70%, transparent 100%);
+            opacity: 0.8;
             z-index: -1;
         }
 
@@ -410,13 +415,13 @@
         .content-wrapper {
             position: relative;
             z-index: 1;
-            background: rgba(12, 12, 12, 0.88);
-            backdrop-filter: blur(12px);
+            background: rgba(15, 15, 15, 0.82);
+            backdrop-filter: blur(8px);
             min-height: 100vh;
             padding: 20px;
         }
 
-        /* ANIMAÇÃO DE CONQUISTA NO BOTÃO COMPRAR */
+        /* RESTO DO CSS PERMANECE IGUAL... */
         .achievement-popup {
             display: none;
             position: fixed;
@@ -499,7 +504,6 @@
             font-weight: 700;
         }
 
-        /* SPARKLES/BRILHOS */
         .sparkles-container {
             position: absolute;
             top: 0;
@@ -522,20 +526,13 @@
         }
 
         @keyframes sparkleAnim {
-            0% {
-                transform: translate(0, 0) scale(0) rotate(0deg);
-                opacity: 1;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                transform: translate(var(--tx), var(--ty)) scale(1.5) rotate(360deg);
-                opacity: 0;
-            }
+            0% { transform: translate(0, 0) scale(0) rotate(0deg); opacity: 1; }
+            50% { opacity: 1; }
+            100% { transform: translate(var(--tx), var(--ty)) scale(1.5) rotate(360deg); opacity: 0; }
         }
 
-        /* HEADER */
+        /* ... (restante do CSS igual ao anterior) ... */
+        
         .header {
             padding: 60px 20px;
             text-align: center;
@@ -618,7 +615,6 @@
             color: var(--text);
         }
 
-        /* SELEÇÃO DE MODO */
         .mode-selection {
             text-align: center;
             margin-bottom: 60px;
@@ -651,8 +647,6 @@
             border-radius: 50px;
             cursor: pointer;
             transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
         }
 
         .mode-btn:hover {
@@ -667,17 +661,12 @@
             color: white;
         }
 
-        .mode-btn.buyer:hover {
-            background: linear-gradient(90deg, #16a34a 0%, var(--green) 100%);
-        }
-
         .mode-btn.seller {
             background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 100%);
             border-color: var(--gold);
             color: var(--dark);
         }
 
-        /* ÁREAS */
         .seller-area, .buyer-area {
             display: none;
         }
@@ -686,7 +675,6 @@
             display: block;
         }
 
-        /* PAINEL VENDEDOR */
         .password-form {
             text-align: center;
             max-width: 400px;
@@ -741,7 +729,6 @@
             font-weight: 600;
         }
 
-        /* LEITOR DE EBOOK */
         .ebook-reader {
             display: none;
             position: fixed;
@@ -773,8 +760,6 @@
         .reader-content h1 { color: #1a1a1a; -webkit-text-fill-color: #1a1a1a; font-size: 2.5rem; margin-bottom: 30px; }
         .reader-content h2 { color: #333; margin-top: 40px; margin-bottom: 20px; font-size: 1.8rem; border-bottom: 2px solid #d4af37; padding-bottom: 10px; }
         .reader-content p { margin-bottom: 20px; text-align: justify; }
-        .reader-content ul { margin-left: 30px; margin-bottom: 20px; }
-        .reader-content li { margin-bottom: 10px; }
 
         .close-reader {
             position: fixed;
@@ -790,7 +775,6 @@
             z-index: 2001;
         }
 
-        /* PRODUTOS */
         .bundle {
             background: linear-gradient(145deg, rgba(36, 36, 36, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
             border: 2px solid var(--gold);
@@ -894,7 +878,6 @@
             color: var(--dark);
         }
 
-        /* POPUP PAGAMENTO */
         .popup-overlay {
             display: none;
             position: fixed;
@@ -1007,6 +990,20 @@
             margin-top: 40px;
         }
 
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .secure-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+            color: var(--green);
+            font-size: 0.85rem;
+        }
+
         @media (max-width: 768px) {
             .bookshelf, .door { display: none; }
             .fireplace-container { width: 350px; height: 280px; }
@@ -1016,31 +1013,21 @@
 </head>
 <body>
 
-    <!-- CENA COMPLETA -->
+    <!-- CENA MAIS FORTE/VISÍVEL -->
     <div class="background-scene">
-        <!-- ESTANTE DE LIVROS -->
+        <!-- ESTANTE -->
         <div class="bookshelf">
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="shelf" style="top: 110px;"></div>
-            <div class="shelf" style="top: 220px;"></div>
-            <div class="shelf" style="top: 330px;"></div>
+            <div class="book"></div><div class="book"></div><div class="book"></div>
+            <div class="book"></div><div class="book"></div><div class="book"></div>
+            <div class="book"></div><div class="book"></div><div class="book"></div>
+            <div class="book"></div><div class="book"></div><div class="book"></div>
+            <div class="shelf" style="top: 115px;"></div>
+            <div class="shelf" style="top: 235px;"></div>
+            <div class="shelf" style="top: 355px;"></div>
         </div>
 
         <!-- PORTA -->
-        <div class="door">
-            <div class="door-knob"></div>
-        </div>
+        <div class="door"><div class="door-knob"></div></div>
 
         <!-- LAREIRA -->
         <div class="fireplace-container">
@@ -1050,10 +1037,8 @@
                     <div class="fire-glow"></div>
                     <div class="embers"></div>
                     <div class="fire">
-                        <div class="flame"></div>
-                        <div class="flame"></div>
-                        <div class="flame"></div>
-                        <div class="flame"></div>
+                        <div class="flame"></div><div class="flame"></div>
+                        <div class="flame"></div><div class="flame"></div>
                     </div>
                 </div>
             </div>
@@ -1062,25 +1047,17 @@
         <!-- TAPETE -->
         <div class="rug"></div>
 
-        <!-- MESA DE MADEIRA COM CAFÉ -->
+        <!-- MESA COM CAFÉ -->
         <div class="wooden-table">
             <div class="table-top"></div>
-            <div class="table-leg"></div>
-            <div class="table-leg"></div>
+            <div class="table-leg"></div><div class="table-leg"></div>
             <div class="coffee-set">
                 <div class="saucer"></div>
-                <div class="coffee-cup">
-                    <div class="coffee-liquid"></div>
-                </div>
+                <div class="coffee-cup"><div class="coffee-liquid"></div></div>
                 <div class="steam-container">
-                    <div class="steam"></div>
-                    <div class="steam"></div>
-                    <div class="steam"></div>
+                    <div class="steam"></div><div class="steam"></div><div class="steam"></div>
                 </div>
-                <div class="marshmallows">
-                    <div class="marshmallow"></div>
-                    <div class="marshmallow"></div>
-                </div>
+                <div class="marshmallows"><div class="marshmallow"></div><div class="marshmallow"></div></div>
             </div>
         </div>
     </div>
@@ -1088,12 +1065,12 @@
     <!-- CONTEÚDO -->
     <div class="content-wrapper">
 
-        <!-- POPUP DE CONQUISTA (AGORA NO CLIQUE EM COMPRAR) -->
+        <!-- POPUP CONQUISTA -->
         <div id="achievement-popup" class="achievement-popup">
             <div class="sparkles-container" id="sparkles-container"></div>
             <div class="achievement-badge">🏆</div>
             <h2 class="achievement-title">Excelente Escolha!</h2>
-            <p class="achievement-text">Você está a um passo de transformar sua vida financeira. Complete sua compra abaixo:</p>
+            <p class="achievement-text">Você está a um passo de transformar sua vida financeira.</p>
             <div class="achievement-product">
                 <div class="achievement-product-name" id="ach-product-name">Nome do Ebook</div>
                 <div class="achievement-product-price" id="ach-product-price">R$ 0,00</div>
@@ -1101,7 +1078,7 @@
             <button class="btn-buy" onclick="irParaPagamento()">Continuar para Pagamento →</button>
         </div>
 
-        <!-- POPUP DE PAGAMENTO -->
+        <!-- POPUP PAGAMENTO -->
         <div id="popup" class="popup-overlay">
             <div class="popup-content">
                 <button class="popup-close" onclick="fecharPopup()">×</button>
@@ -1152,7 +1129,7 @@
             </div>
         </div>
 
-        <!-- LEITOR DE EBOOK -->
+        <!-- LEITOR -->
         <div id="ebook-reader" class="ebook-reader">
             <button class="close-reader" onclick="fecharReader()">✕ Fechar</button>
             <div class="reader-content" id="reader-content"></div>
@@ -1165,18 +1142,9 @@
                 <p class="subtitle">Bem-vindo ao nosso cantinho de leitura. Entre o calor da lareira e o aroma do café, descubra o conhecimento que mudará sua vida financeira.</p>
                 
                 <div class="stats">
-                    <div class="stat-item">
-                        <span class="stat-number">10</span>
-                        <span class="stat-label">Obras Exclusivas</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Páginas de Sabedoria</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">∞</span>
-                        <span class="stat-label">Possibilidades</span>
-                    </div>
+                    <div class="stat-item"><span class="stat-number">10</span><span class="stat-label">Obras Exclusivas</span></div>
+                    <div class="stat-item"><span class="stat-number">500+</span><span class="stat-label">Páginas de Sabedoria</span></div>
+                    <div class="stat-item"><span class="stat-number">∞</span><span class="stat-label">Possibilidades</span></div>
                 </div>
             </div>
         </header>
@@ -1184,20 +1152,16 @@
         <main class="main">
             <div class="container">
 
-                <!-- SELEÇÃO DE MODO -->
+                <!-- SELEÇÃO -->
                 <div class="mode-selection" id="mode-selection">
                     <h2 class="mode-title">Como você deseja entrar?</h2>
                     <div class="mode-buttons">
-                        <button class="mode-btn buyer" onclick="entrarComprador()">
-                            👤 Sou Visitante
-                        </button>
-                        <button class="mode-btn seller" onclick="entrarVendedor()">
-                            🔐 Sou o Bibliotecário
-                        </button>
+                        <button class="mode-btn buyer" onclick="entrarComprador()">👤 Sou Visitante</button>
+                        <button class="mode-btn seller" onclick="entrarVendedor()">🔐 Sou o Bibliotecário</button>
                     </div>
                 </div>
 
-                <!-- ÁREA DO VENDEDOR -->
+                <!-- VENDEDOR -->
                 <div class="seller-area" id="seller-area">
                     <div class="password-form" id="password-form">
                         <h3 style="color: var(--gold); margin-bottom: 20px;">🔐 Área Restrita</h3>
@@ -1215,21 +1179,26 @@
 
                         <h2 style="color: var(--gold); margin-top: 40px; margin-bottom: 20px;">🛒 Pedidos Recentes</h2>
                         <div class="panel-card">
-                            <p style="color: var(--text-muted);">Os pedidos aparecerão no seu email cadastrado no Formspree.</p>
+                            <p style="color: var(--text-muted);"><strong>Como funciona:</strong></p>
+                            <p style="color: var(--text-muted); margin-top: 10px;">1. Cliente preenche formulário e paga via Pix</p>
+                            <p style="color: var(--text-muted);">2. Você recebe email com dados do cliente</p>
+                            <p style="color: var(--text-muted);">3. Verifica pagamento no seu banco</p>
+                            <p style="color: var(--text-muted);">4. Envia ebook para o email do cliente</p>
+                            <p style="color: var(--gold); margin-top: 15px;">✓ Verifique seu email: duduopedrosilva@gmail.com</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- ÁREA DO COMPRADOR -->
+                <!-- COMPRADOR -->
                 <div class="buyer-area" id="buyer-area">
                     
-                    <!-- Pacote Completo -->
+                    <!-- PACOTE -->
                     <div class="bundle">
                         <h2 class="bundle-title">Coleção Completa - 10 Obras</h2>
                         <p class="bundle-description">Leve toda a biblioteca Edward B. Rock. O conhecimento que transformará sua relação com o dinheiro para sempre.</p>
                         
                         <div class="price-container">
-                            <span class="price-old">R$ 790,00</span>
+                            <span style="text-decoration: line-through; color: #ef4444; font-size: 1.5rem; margin-right: 15px;">R$ 790,00</span>
                             <span class="price-new">R$ 276,00</span>
                             <p style="color: var(--text-muted); margin-top: 10px;">ou 12x de R$ 27,60 no cartão</p>
                             <div style="display: inline-block; background: rgba(34, 197, 94, 0.1); border: 1px solid var(--green); color: var(--green); padding: 8px 16px; border-radius: 50px; margin-top: 15px; font-weight: 600;">🔥 Economize R$ 514,00 (65% OFF)</div>
@@ -1243,7 +1212,6 @@
                     </div>
 
                     <h2 class="section-title">Obras Disponíveis</h2>
-
                     <div class="ebooks-grid" id="ebooks-grid"></div>
 
                 </div>
@@ -1265,12 +1233,12 @@
     </div>
 
     <script>
-        // CONFIGURAÇÕES
+        // CONFIG
         const SENHA_VENDEDOR = 'eduardo123';
         const TELEFONE_PIX = '+55 11 91693-5400';
         let produtoAtual = {};
 
-        // EBOOKS COM CONTEÚDO COMPLETO (500+ PÁGINAS SIMULADAS)
+        // EBOOKS CONTEÚDO
         const ebooksConteudo = {
             'milionario': {
                 titulo: 'Como Ficar Milionário',
@@ -1278,15 +1246,7 @@
                 preco: 'R$ 47,00',
                 paginas: '68 páginas',
                 resumo: 'O guia definitivo para construir riqueza duradoura do zero.',
-                conteudo: gerarConteudoEbook('Como Ficar Milionário', '💰', 68, [
-                    'O Mindset da Riqueza',
-                    'A Matemática do Milhão',
-                    'Hábitos dos Milionários',
-                    'Múltiplas Fontes de Renda',
-                    'Investimentos Inteligentes',
-                    'Protegendo sua Riqueza',
-                    'Legado e Prosperidade'
-                ])
+                conteudo: gerarConteudoEbook('Como Ficar Milionário', '💰', 68, ['O Mindset da Riqueza', 'A Matemática do Milhão', 'Hábitos dos Milionários', 'Múltiplas Fontes de Renda', 'Investimentos Inteligentes', 'Protegendo sua Riqueza', 'Legado e Prosperidade'])
             },
             'bitcoin': {
                 titulo: 'Bitcoin: Guia Completo',
@@ -1294,15 +1254,7 @@
                 preco: 'R$ 47,00',
                 paginas: '55 páginas',
                 resumo: 'Entenda criptomoedas e proteja seu patrimônio no futuro digital.',
-                conteudo: gerarConteudoEbook('Bitcoin: Guia Completo', '₿', 55, [
-                    'O Que é Bitcoin?',
-                    'Blockchain Explicado',
-                    'Como Comprar Bitcoin',
-                    'Carteiras e Segurança',
-                    'Estratégias de Investimento',
-                    'Trading de Criptomoedas',
-                    'O Futuro do Dinheiro'
-                ])
+                conteudo: gerarConteudoEbook('Bitcoin: Guia Completo', '₿', 55, ['O Que é Bitcoin?', 'Blockchain Explicado', 'Como Comprar Bitcoin', 'Carteiras e Segurança', 'Estratégias de Investimento', 'Trading de Criptomoedas', 'O Futuro do Dinheiro'])
             },
             'trader': {
                 titulo: 'Trader: Do Zero ao Profissional',
@@ -1310,15 +1262,7 @@
                 preco: 'R$ 47,00',
                 paginas: '72 páginas',
                 resumo: 'Domine Day Trade e Swing Trade com estratégias validadas.',
-                conteudo: gerarConteudoEbook('Trader: Do Zero ao Profissional', '📈', 72, [
-                    'Psicologia do Trader',
-                    'Análise Técnica Fundacional',
-                    'Padrões de Candlestick',
-                    'Indicadores e Osciladores',
-                    'Gestão de Risco',
-                    'Plano de Trading',
-                    'Diário de Operações'
-                ])
+                conteudo: gerarConteudoEbook('Trader: Do Zero ao Profissional', '📈', 72, ['Psicologia do Trader', 'Análise Técnica Fundacional', 'Padrões de Candlestick', 'Indicadores e Osciladores', 'Gestão de Risco', 'Plano de Trading', 'Diário de Operações'])
             },
             'renda': {
                 titulo: 'Renda Passiva',
@@ -1326,15 +1270,7 @@
                 preco: 'R$ 47,00',
                 paginas: '64 páginas',
                 resumo: 'Construa máquinas de dinheiro que trabalham 24h por você.',
-                conteudo: gerarConteudoEbook('Renda Passiva', '🏠', 64, [
-                    'Tipos de Renda Passiva',
-                    'Investimentos em Dividendos',
-                    'Negócios Digitais Automatizados',
-                    'Aluguel de Imóveis',
-                    'Royalties e Licenciamentos',
-                    'Carteira de Renda Passiva',
-                    'A Jornada dos R$ 10.000/mês'
-                ])
+                conteudo: gerarConteudoEbook('Renda Passiva', '🏠', 64, ['Tipos de Renda Passiva', 'Investimentos em Dividendos', 'Negócios Digitais Automatizados', 'Aluguel de Imóveis', 'Royalties e Licenciamentos', 'Carteira de Renda Passiva', 'A Jornada dos R$ 10.000/mês'])
             },
             'financas': {
                 titulo: 'Finanças Pessoais',
@@ -1342,15 +1278,7 @@
                 preco: 'R$ 37,00',
                 paginas: '58 páginas',
                 resumo: 'Organize sua vida financeira e saia do vermelho definitivamente.',
-                conteudo: gerarConteudoEbook('Finanças Pessoais', '💳', 58, [
-                    'Diagnóstico Financeiro',
-                    'O Orçamento 50/30/20',
-                    'Sair das Dívidas',
-                    'Fundo de Emergência',
-                    'Metas Financeiras',
-                    'Planejamento de Viagens',
-                    'Independência Financeira'
-                ])
+                conteudo: gerarConteudoEbook('Finanças Pessoais', '💳', 58, ['Diagnóstico Financeiro', 'O Orçamento 50/30/20', 'Sair das Dívidas', 'Fundo de Emergência', 'Metas Financeiras', 'Planejamento de Viagens', 'Independência Financeira'])
             },
             'mentalidade': {
                 titulo: 'Mentalidade Milionária',
@@ -1358,15 +1286,7 @@
                 preco: 'R$ 37,00',
                 paginas: '52 páginas',
                 resumo: 'Reprograme sua mente para atrair riqueza e abundância.',
-                conteudo: gerarConteudoEbook('Mentalidade Milionária', '🧠', 52, [
-                    'Crenças Limitantes',
-                    'Lei da Atração Financeira',
-                    'Hábitos da Abundância',
-                    'Visualização Criativa',
-                    'Gratidão e Prosperidade',
-                    'Networking de Sucesso',
-                    'Mentoria e Crescimento'
-                ])
+                conteudo: gerarConteudoEbook('Mentalidade Milionária', '🧠', 52, ['Crenças Limitantes', 'Lei da Atração Financeira', 'Hábitos da Abundância', 'Visualização Criativa', 'Gratidão e Prosperidade', 'Networking de Sucesso', 'Mentoria e Crescimento'])
             },
             'investimentos': {
                 titulo: 'Investimentos para Iniciantes',
@@ -1374,15 +1294,7 @@
                 preco: 'R$ 37,00',
                 paginas: '61 páginas',
                 resumo: 'Primeiros passos no mundo dos investimentos sem complicação.',
-                conteudo: gerarConteudoEbook('Investimentos para Iniciantes', '📊', 61, [
-                    'Perfil do Investidor',
-                    'Renda Fixa vs Variável',
-                    'Tesouro Direto',
-                    'Ações e Dividendos',
-                    'Fundos Imobiliários',
-                    'ETFs e BDRs',
-                    'Montando sua Carteira'
-                ])
+                conteudo: gerarConteudoEbook('Investimentos para Iniciantes', '📊', 61, ['Perfil do Investidor', 'Renda Fixa vs Variável', 'Tesouro Direto', 'Ações e Dividendos', 'Fundos Imobiliários', 'ETFs e BDRs', 'Montando sua Carteira'])
             },
             'empreendedorismo': {
                 titulo: 'Empreendedorismo Digital',
@@ -1390,15 +1302,7 @@
                 preco: 'R$ 47,00',
                 paginas: '69 páginas',
                 resumo: 'Construa um negócio online lucrativo do zero.',
-                conteudo: gerarConteudoEbook('Empreendedorismo Digital', '💻', 69, [
-                    'Encontrando seu Nicho',
-                    'Criando Produtos Digitais',
-                    'Marketing de Conteúdo',
-                    'Redes Sociais e Alcance',
-                    'Email Marketing',
-                    'Automação e Escalabilidade',
-                    'Vendas e Conversão'
-                ])
+                conteudo: gerarConteudoEbook('Empreendedorismo Digital', '💻', 69, ['Encontrando seu Nicho', 'Criando Produtos Digitais', 'Marketing de Conteúdo', 'Redes Sociais e Alcance', 'Email Marketing', 'Automação e Escalabilidade', 'Vendas e Conversão'])
             },
             'aposentadoria': {
                 titulo: 'Aposentadoria: Planeje seu Futuro',
@@ -1406,15 +1310,7 @@
                 preco: 'R$ 37,00',
                 paginas: '54 páginas',
                 resumo: 'Garanta uma velhice tranquila e independente financeiramente.',
-                conteudo: gerarConteudoEbook('Aposentadoria: Planeje seu Futuro', '🏖️', 54, [
-                    'Quanto Você Precisa?',
-                    'Previdência Privada',
-                    'Investimentos para Aposentadoria',
-                    'Plano por Idade',
-                    'Renda Vitalícia',
-                    'Herança e Legado',
-                    'Aposentadoria Antecipada'
-                ])
+                conteudo: gerarConteudoEbook('Aposentadoria: Planeje seu Futuro', '🏖️', 54, ['Quanto Você Precisa?', 'Previdência Privada', 'Investimentos para Aposentadoria', 'Plano por Idade', 'Renda Vitalícia', 'Herança e Legado', 'Aposentadoria Antecipada'])
             },
             'dividas': {
                 titulo: 'Como Sair das Dívidas',
@@ -1422,73 +1318,47 @@
                 preco: 'R$ 37,00',
                 paginas: '48 páginas',
                 resumo: 'Libertação financeira passo a passo. Comece sua jornada aqui.',
-                conteudo: gerarConteudoEbook('Como Sair das Dívidas', '🆘', 48, [
-                    'Mapeando o Inimigo',
-                    'Negociação Estratégica',
-                    'Estratégia Snowball',
-                    'Estratégia Avalanche',
-                    'Consolidação de Dívidas',
-                    'Vida Após as Dívidas',
-                    'Nunca Mais Endividado'
-                ])
+                conteudo: gerarConteudoEbook('Como Sair das Dívidas', '🆘', 48, ['Mapeando o Inimigo', 'Negociação Estratégica', 'Estratégia Snowball', 'Estratégia Avalanche', 'Consolidação de Dívidas', 'Vida Após as Dívidas', 'Nunca Mais Endividado'])
             }
         };
 
-        // GERAR CONTEÚDO COMPLETO DO EBOOK (simulando 500+ páginas)
         function gerarConteudoEbook(titulo, icone, paginas, capitulos) {
             let conteudo = `<h1>${icone} ${titulo}</h1>`;
             conteudo += `<p style="text-align: center; color: #666; font-style: italic; margin-bottom: 40px;">Edward B. Rock | ${paginas} páginas de conteúdo transformador</p>`;
-            
             conteudo += `<h2>📖 Sumário</h2><ul>`;
-            capitulos.forEach((cap, idx) => {
-                conteudo += `<li>Capítulo ${idx + 1}: ${cap}</li>`;
-            });
+            capitulos.forEach((cap, idx) => conteudo += `<li>Capítulo ${idx + 1}: ${cap}</li>`);
             conteudo += `</ul>`;
-
             conteudo += `<h2>🎯 Introdução</h2>`;
-            conteudo += `<p>Bem-vindo a esta jornada de transformação financeira. Este livro foi cuidadosamente elaborado para guiar você passo a passo, desde os fundamentos até as estratégias avançadas que os verdadeiramente bem-sucedidos utilizam.</p>`;
-            conteudo += `<p>Ao longo de ${paginas} páginas, você descobrirá segredos que não são ensinados nas escolas convencionais. Prepare-se para uma mudança de paradigma completa.</p>`;
-
+            conteudo += `<p>Bem-vindo a esta jornada de transformação financeira. Este livro foi cuidadosamente elaborado para guiar você passo a passo.</p>`;
+            conteudo += `<p>Ao longo de ${paginas} páginas, você descobrirá segredos que não são ensinados nas escolas convencionais.</p>`;
+            
             capitulos.forEach((capitulo, idx) => {
                 conteudo += `<h2>Capítulo ${idx + 1}: ${capitulo}</h2>`;
-                
-                // Gerar conteúdo extenso para cada capítulo
-                for (let i = 0; i < 5; i++) {
-                    conteudo += `<p>${gerarParagrafo(capitulo, i)}</p>`;
-                }
-                
+                for (let i = 0; i < 5; i++) conteudo += `<p>${gerarParagrafo(capitulo, i)}</p>`;
                 conteudo += `<h3>💡 Pontos-chave:</h3><ul>`;
                 conteudo += `<li>Entenda profundamente os conceitos apresentados</li>`;
                 conteudo += `<li>Aplique imediatamente o conhecimento adquirido</li>`;
-                conteudo += `<li>Revise periodicamente para fixação</li>`;
-                conteudo += `<li>Compartilhe com pessoas que também precisam</li>`;
-                conteudo += `</ul>`;
-                
-                conteudo += `<div style="background: #f0f0f0; padding: 20px; border-left: 4px solid #d4af37; margin: 20px 0;">`;
-                conteudo += `<strong>🎯 Exercício Prático:</strong> Após ler este capítulo, reserve 30 minutos para implementar pelo menos uma das estratégias apresentadas. A ação é o que separa os sonhadores dos realizadores.`;
-                conteudo += `</div>`;
+                conteudo += `<li>Revise periodicamente para fixação</li></ul>`;
+                conteudo += `<div style="background: #f0f0f0; padding: 20px; border-left: 4px solid #d4af37; margin: 20px 0;"><strong>🎯 Exercício:</strong> Reserve 30 minutos para implementar uma das estratégias apresentadas.</div>`;
             });
 
-            conteudo += `<h2>🚀 Conclusão: Sua Jornada Começa Agora</h2>`;
-            conteudo += `<p>Você agora possui o conhecimento. O próximo passo é a ação. Lembre-se: nenhum livro, por mais completo que seja, pode mudar sua vida sozinho. Você precisa ser o protagonista dessa história.</p>`;
-            conteudo += `<p>Edward B. Rock acredita em você. Agora é hora de você acreditar em si mesmo.</p>`;
+            conteudo += `<h2>🚀 Conclusão</h2>`;
+            conteudo += `<p>Você agora possui o conhecimento. O próximo passo é a ação.</p>`;
             conteudo += `<p style="text-align: center; margin-top: 40px; font-size: 1.2rem; color: #d4af37;"><strong>🌟 Para o seu sucesso!</strong></p>`;
-
             return conteudo;
         }
 
         function gerarParagrafo(tema, index) {
             const paragrafos = [
-                `O ${tema} representa um dos pilares fundamentais para o sucesso financeiro duradouro. Quando compreendemos profundamente este conceito, desbloqueamos possibilidades que antes pareciam inalcançáveis.`,
-                `Estudos recentes demonstram que 85% das pessoas que dominam esta área específica alcançam seus objetivos financeiros em metade do tempo comparado à média populacional.`,
-                `A implementação prática destes conhecimentos requer disciplina, consistência e, acima de tudo, paciência. Grandes resultados são construídos através de pequenas ações diárias.`,
-                `É fundamental manter-se atualizado sobre as novas tendências e adaptar as estratégias conforme o mercado evolui. A flexibilidade é uma característica dos verdadeiramente bem-sucedidos.`,
-                `Lembre-se: o conhecimento sem ação é apenas potencial desperdiçado. Cada página deste livro foi escrita para ser aplicada, não apenas lida.`
+                `O ${tema} representa um dos pilares fundamentais para o sucesso financeiro duradouro.`,
+                `Estudos recentes demonstram que 85% das pessoas que dominam esta área alcançam seus objetivos.`,
+                `A implementação prática requer disciplina, consistência e paciência.`,
+                `É fundamental manter-se atualizado sobre as novas tendências do mercado.`,
+                `Lembre-se: o conhecimento sem ação é apenas potencial desperdiçado.`
             ];
             return paragrafos[index] || paragrafos[0];
         }
 
-        // GERAR QR CODE
         function gerarQRCode(valor, descricao) {
             const pixCode = `00020126580014BR.GOV.BCB.PIX0114+5511916935400520400005303986540${valor.length}${valor}5802BR5913EDWARD BROCK6009SAO PAULO62140510${descricao}6304`;
             return `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(pixCode)}`;
@@ -1516,41 +1386,33 @@
             }
         }
 
-        // MOSTRAR CONQUISTA (NO CLIQUE EM COMPRAR)
+        // ANIMAÇÃO CONQUISTA
         function mostrarConquista(id, titulo, preco, icone) {
             produtoAtual = { id, titulo, preco, icone };
-            
             document.getElementById('ach-product-name').textContent = titulo;
             document.getElementById('ach-product-price').textContent = preco;
             
-            criarSparkles();
-            document.getElementById('achievement-popup').classList.add('active');
-        }
-
-        function criarSparkles() {
+            // Criar sparkles
             const container = document.getElementById('sparkles-container');
             container.innerHTML = '';
-            
             for (let i = 0; i < 40; i++) {
                 const sparkle = document.createElement('div');
                 sparkle.className = 'sparkle';
-                
                 const angle = (Math.PI * 2 * i) / 40;
                 const distance = 80 + Math.random() * 120;
-                
                 sparkle.style.setProperty('--tx', Math.cos(angle) * distance + 'px');
                 sparkle.style.setProperty('--ty', Math.sin(angle) * distance + 'px');
                 sparkle.style.left = '50%';
                 sparkle.style.top = '50%';
                 sparkle.style.animationDelay = (Math.random() * 1) + 's';
-                
                 container.appendChild(sparkle);
             }
+            
+            document.getElementById('achievement-popup').classList.add('active');
         }
 
         function irParaPagamento() {
             document.getElementById('achievement-popup').classList.remove('active');
-            
             const valor = produtoAtual.preco.replace(/\D/g,'');
             document.getElementById('popup-icon').textContent = produtoAtual.icone;
             document.getElementById('popup-title').textContent = produtoAtual.titulo;
@@ -1558,7 +1420,6 @@
             document.getElementById('input-produto').value = produtoAtual.titulo;
             document.getElementById('input-preco').value = produtoAtual.preco;
             document.getElementById('qr-code-img').src = gerarQRCode(valor, produtoAtual.id);
-            
             document.getElementById('popup').classList.add('active');
         }
 
@@ -1567,16 +1428,13 @@
         }
 
         function copiarPix() {
-            navigator.clipboard.writeText(TELEFONE_PIX).then(() => {
-                alert('✅ Número copiado!');
-            });
+            navigator.clipboard.writeText(TELEFONE_PIX).then(() => alert('✅ Número copiado!'));
         }
 
         // RENDERIZAR
         function renderizarEbooksComprador() {
             const grid = document.getElementById('ebooks-grid');
             grid.innerHTML = '';
-            
             Object.keys(ebooksConteudo).forEach(key => {
                 const ebook = ebooksConteudo[key];
                 const card = document.createElement('div');
@@ -1586,12 +1444,8 @@
                     <h3 class="ebook-title">${ebook.titulo}</h3>
                     <p class="ebook-description">${ebook.resumo}</p>
                     <p class="ebook-pages">📄 ${ebook.paginas}</p>
-                    <div class="ebook-price">
-                        <span class="ebook-price-new">${ebook.preco}</span>
-                    </div>
-                    <button class="btn-buy-small" onclick="mostrarConquista('${key}', '${ebook.titulo}', '${ebook.preco}', '${ebook.icone}')">
-                        Comprar Agora
-                    </button>
+                    <div class="ebook-price"><span class="ebook-price-new">${ebook.preco}</span></div>
+                    <button class="btn-buy-small" onclick="mostrarConquista('${key}', '${ebook.titulo}', '${ebook.preco}', '${ebook.icone}')">Comprar Agora</button>
                 `;
                 grid.appendChild(card);
             });
@@ -1600,7 +1454,6 @@
         function renderizarEbooksVendedor() {
             const grid = document.getElementById('ebooks-vendedor');
             grid.innerHTML = '';
-            
             Object.keys(ebooksConteudo).forEach(key => {
                 const ebook = ebooksConteudo[key];
                 const card = document.createElement('div');
@@ -1623,7 +1476,6 @@
             document.getElementById('ebook-reader').classList.remove('active');
         }
 
-        // FECHAR POPUP CLICANDO FORA
         document.getElementById('popup').addEventListener('click', function(e) {
             if (e.target === this) fecharPopup();
         });
